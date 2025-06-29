@@ -1,13 +1,13 @@
 {
   "compilerOptions": {
-    "outDir": "./dist",
-    "module": "CommonJS",
     "target": "ES6",
-    "moduleResolution": "Node",
-    "esModuleInterop": true,
+    "module": "CommonJS",
+    "outDir": "./dist",
+    "rootDir": "./src",
     "strict": true,
-    "baseUrl": "./src",
-    "rootDir": "./src"
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
   },
   "include": ["src"]
 }
