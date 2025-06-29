@@ -2,6 +2,12 @@
 
 A powerful admin dashboard for analyzing financial transactions with JWT authentication, advanced filtering, visual charts, configurable CSV export, and responsive design.
 
+
+# Postman Collection Link
+https://gist.github.com/ibhavanaa/7d5d605d820dc84d059aaaa2e63ef341
+
+# Github Code Link
+https://github.com/ibhavanaa
 ---
 
 ## 🚀 Tech Stack
@@ -96,8 +102,6 @@ endDate=<yyyy-mm-dd>
 
 columns=id,date,status,... (for export)
 
-📸 Screenshots
-
 📄 Documentation
 ✅ Setup instructions (above)
 
@@ -109,3 +113,4 @@ columns=id,date,status,... (for export)
 
 
 🙌 Author
+ Bhavana Choudhary
