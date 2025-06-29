@@ -6,7 +6,10 @@ import transactionRoutes from "./routes/transaction.routes";
 const app = express();
 
 // ✅ MIDDLEWARES MUST GO FIRST
-app.use(cors());
+app.use(cors({
+  origin: "https://finance-dashboard-fawn-kappa.vercel.app", // ✅ your frontend URL
+  credentials: true
+}));
 app.use(express.json()); // ✅ REQUIRED to parse req.body
 
 // ✅ ROUTES COME AFTER MIDDLEWARES
