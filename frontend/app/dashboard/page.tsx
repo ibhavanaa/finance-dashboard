@@ -49,14 +49,14 @@ export default function Dashboard() {
         limit: 1000,
       };
 
-      const res = await axios.get<{ data: Transaction[] }>('http://localhost:5000/api/transactions', {
+      const res = await axios.get<{ data: Transaction[] }>('https://finance-dashboard-i4gu.onrender.com/api/transactions', {
         headers: { Authorization: `Bearer ${token}` },
         params,
       });
 
       setTransactions(res.data.data);
 
-      const allUsersRes = await axios.get<{ data: Transaction[] }>('http://localhost:5000/api/transactions', {
+      const allUsersRes = await axios.get<{ data: Transaction[] }>('https://finance-dashboard-i4gu.onrender.com/api/transactions', {
         headers: { Authorization: `Bearer ${token}` },
         params: { limit: 1000 },
       });
