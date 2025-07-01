@@ -34,7 +34,7 @@ export default function ExportModal({ filters, onClose }: Props) {
     }
     const query = new URLSearchParams({ ...filters }).toString();
     const columnsParam = selectedCols.join(',');
-    const fullURL = `http://localhost:5000/api/transactions/export?${query}&columns=${columnsParam}`;
+    const fullURL = `https://finance-dashboard-i4gu.onrender.com/api/transactions/export?${query}&columns=${columnsParam}`;
     window.open(fullURL, '_blank');
     onClose();
   };
