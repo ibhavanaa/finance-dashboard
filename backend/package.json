@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
-    "build": "tsc",
-    "start": "node dist/server.js",
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+  "build": "tsc",
+  "start": "node dist/server.js",
+  "create-user": "ts-node src/scripts/createUser.ts",
+  "import-transactions": "ts-node src/scripts/importTransactions.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
