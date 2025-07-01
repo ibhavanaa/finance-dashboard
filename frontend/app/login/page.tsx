@@ -20,10 +20,12 @@ export default function LoginPage() {
 
     try {
       setLoading(true);
-      const res = await axios.post('http://localhost:5000/api/auth/login', {
-        username,
-        password,
-      });
+      const res = await axios.post(
+  'https://finance-dashboard-i4gu.onrender.com/api/auth/login',
+  { username, password },
+  { withCredentials: true } // ← this is necessary for cookie/session auth
+);
+
       localStorage.setItem('token', res.data.token);
       toast.success('Login successful!');
       router.push('/dashboard');
