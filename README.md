@@ -4,7 +4,13 @@ A powerful admin dashboard for analyzing financial transactions with JWT authent
 
 
 # Postman Collection Link
+
 https://gist.github.com/ibhavanaa/7d5d605d820dc84d059aaaa2e63ef341
+
+# Live Deployed Project URL
+
+https://finance-dashboard-fawn-kappa.vercel.app/login
+
 
 # Github Code Link
 https://github.com/ibhavanaa
